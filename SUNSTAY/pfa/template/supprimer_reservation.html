@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Supprimer une réservation</h3>
+                </div>
+                <div class="card-body">
+                    {% if error_message %}
+                        <div class="alert alert-danger">{{ error_message }}</div>
+                    {% endif %}
+                    <p>Voulez-vous vraiment supprimer cette réservation?</p>
+                    <p><strong>ID de réservation:</strong> {{ reservation.id }}</p>
+                    <p><strong>Nom:</strong> {{ reservation.nom }}</p>
+                    <p><strong>Date:</strong> {{ reservation.date }}</p>
+                    <form method="post" action="{% url 'delete_reservation' reservation.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                        <a href="{% url 'view_reservations' %}" class="btn btn-secondary">Annuler</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

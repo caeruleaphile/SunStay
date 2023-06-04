@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunStay</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afea27c44a.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+   
+    <style>
+        .background {
+            
+          min-height: 100vh;
+          width: 100%;
+          background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+          background-image: url("{% static 'media/banner.png' %}");
+          /* Autres styles pour le conteneur */
+        }
+      </style>
+      
+    <div  class="background" >
+        
+            
+        <nav id="navbar">
+            <img src="{% static 'media/2L.png' %} " class="logo">
+            
+            <ul class="nav-links">
+                <li><a href="/listing" class="active" target="_blank" >Popular Places</a></li>
+                <li><a href="#" class="active">Travel Outside</a></li>
+                <li><a href="/home" class="active" target="_blank">Online Packages</a></li>
+            </ul>
+            <a href="http://127.0.0.1:8000/login" class="register-btn" target="_blank">login or register</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+            
+            <h1>Find Your Next Stay</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label for="text">Location</label>
+                        <input type="text" placeholder="destination" id="text">
+                    </div>
+                    <div id="ci">
+                        <style>
+                            #ci{
+                                text-align: center;
+                                text-align: left;
+                                position: absolute;
+                                left: 35%;
+                            }
+                        </style>
+                        <label for="text1" class="check" >Check in</label>
+                        <input type="date" placeholder="Add Date" id="text1" >
+                    </div>
+                    <div id="co">
+                        <style>
+                            #co{
+                                text-align: center;
+                                text-align: left;
+                                position: absolute;
+                                left: 50%;
+                            }
+                        </style>
+                        <label for="text2"class="check">Check out</label>
+                        <input type="date" placeholder="Add Date" id="text2">
+                    </div>
+                    <div>
+                        <label for="text3">price</label>
+                        <input type="text" placeholder="max" id="text3">
+                    </div> 
+                    <a href="http://127.0.0.1:8000/login" target="_blank">
+                        <button type="submit">
+                          <img src="{% static 'media/search.png' %}">
+                        </button>
+                      </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="sub-title">Exclusives</h2>
+        <div class="exclusives">
+            <div>
+                <img src="{%static 'media/image-1.png'%}">
+                <span>
+                    <h3>London</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-2.png'%}">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Starts @ $350</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-3.png'%}">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Starts @ $200</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-4.png'%}">
+                <span>
+                    <h3>France</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-5.png'%}">
+                <span>
+                    <h3>Amsterdam</h3>
+                    <p>Starts @ $200</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-6.png'%}">
+                <span>
+                    <h3>Netherlands</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-7.png'%}">
+                <span>
+                    <h3>New York</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-8.png'%}">
+                <span>
+                    <h3>Chicago</h3>
+                    <p>Starts @ 400</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/mar.jpg'%}">
+                <span>
+                    <h3>Marrakech</h3>
+                    <p>Starts @ $350</p>
+                </span>
+            </div>
+            <div>
+                <img src="{%static 'media/image-10.png'%}">
+                <span>
+                    <h3>Shanghai</h3>
+                    <p>Starts @ $300</p>
+                </span>
+            </div>
+        </div>
+        <h2 class="sub-title">Trending Places</h2>
+        <div class="trending">
+            <div>
+                <img src="{%static 'media/dubai.png'%}">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="{%static 'media/new-york.png'%}">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="{%static 'media/paris.png'%}">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="{%static 'media/mm.jpg'%}">
+                <h3>Marrakech</h3>
+            </div>
+        </div>
+        <style>
+            .cta{
+    margin: 10px 0;
+    background-image: linear-gradient(to right,#3f2321,transparent),url("{% static 'media/banner-2.png'%}");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+        </style>
+        <div class="cta">
+            <h3>Sharing<br>Is Earning Now</h3>
+            <p>Great oppurtunity to make money by<br>sharing your extra space.</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+        <h2 class="sub-title">Traveller's Stories</h2>
+        <div class="stories">
+            <div>
+                <img src="{%static 'media/story-1.png'%}">
+                <p>Popular European countries with a budget of just $10,000</p>
+            </div>
+            <div>
+                <img src="{%static 'media/ch2.jpg'%}">
+                <p>Embark on an extraordinary journey to Morocco !</p>
+            </div>
+            <div>
+                <img src="{%static 'media/story-3.png'%}">
+                <p>Best Experience you get while travelling to Thailand</p>
+            </div>
+        </div>
+        <a href="#" class="start-btn">Start making money</a>
+
+        <div class="about-msg">
+            <h2>About SunStay</h2>
+            <p class="justified-text">Welcome to Sunstay, your premier home rental destination. With a handpicked selection of exquisite properties ranging from luxurious villas to charming cottages, we offer personalized and unforgettable stays for every traveler. Our commitment to quality, seamless booking process, and dedicated customer support ensure that your experience with Sunstay is nothing short of exceptional. Discover your home away from home and embark on an unforgettable journey with Sunstay.</p>
+        </div>
+        <div class="footer">
+            <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2023, Bannour & Mouhdane</p>
+        </div>
+    </div>s
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>

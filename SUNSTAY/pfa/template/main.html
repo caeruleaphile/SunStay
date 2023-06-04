@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Fichier CSS Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            font-size: 16px;
+        }
+        @media (max-width: 576px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .card {
+                padding: 10px;
+            }
+            .card-title {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .card-content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Main Page</h1>
+
+        <div class="card">
+            <h2 class="card-title">Card 1</h2>
+            <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ex sit amet eros congue fringilla a nec nunc.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Card 2</h2>
+            <p class="card-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vitae metus dictum, volutpat mi eu, varius justo.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Card 3</h2>
+            <p class="card-content">Fusce tincidunt feugiat consequat. Curabitur a lacus ex. Integer at risus non lectus tempus tincidunt. Sed vehicula neque a quam maximus, sit amet efficitur eros feugiat.</p>
+        </div>
+    </div>
+</body>
+</html>

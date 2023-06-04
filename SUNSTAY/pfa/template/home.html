@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Details Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afea27c44a.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <a href="/index.html" target="_blank">
+            <img src="{% static 'media/2L.png' %}" alt="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li ><a href="#" class="active">Travel Outside</a></li>
+            <li><a href="/listing.html" class="active" target="_blank">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Dar Lila</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star" style="color: #FF8400;" ></i>
+                    <i class="fa-solid fa-star" style="color: #FF8400;"></i>
+                    <i class="fa-solid fa-star" style="color: #FF8400;"></i>
+                    <i class="fa-regular fa-star-half-stroke" style="color: #FF8400;"></i>
+                    <i class="fa-regular fa-star" style="color: #FF8400;"></i>
+                    <span>548 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Centre Medina , Essaouira , Marrakech-Safi , Maroc </p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="{% static 'media/1h.png' %}"></div>
+            <div><img src="{% static 'media/3h.png' %}"></div>
+            <div><img src="{% static 'media/4h.png' %}"></div>
+            <div><img src="{% static 'media/5h.png' %}"></div>
+            <div><img src="{% static 'media/8h.png' %}"></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Amine B.</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>$ 100 / day</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div>
+                <label for="">Check-in</label>
+                <input type="text" name="" id="" placeholder="Add date">
+            </div>
+            <div>
+                <label for="">Check-out</label>
+                <input type="text" name="" id="" placeholder="Add date">
+            </div>
+            <div class="guest-field">
+                <label for="">Guest</label>
+                <input type="text" name="" id="" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+        <ul class="details-list">
+            <li><i class="fa-solid fa-house-chimney"></i>Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class="fa-solid fa-paintbrush"></i>Enhanced Clean
+                <span>This host has commited to SunStay's cleaning process.</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% of recent guests gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Great Check-in Experience
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+        <p class="home-desc">Guests will be allocated on the ground floor according to availability. You get a comfortable two bedroom apartment has a true city feeling. The price quoted is for two guest, at the guest slot please mark the number of guests to get the exact price for groups.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on Map</h3>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168518.0764859512!2d-9.746135428813114!3d31.51386653500199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9a4997aeb6a94b%3A0x42ef54a32d5e0f1c!2sEssaouira%2C%20Morocco!5e0!3m2!1sen!2sin!4v1653111601268!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>Essaouira , Marrakech-Safi , Maroc</b>
+        </div>
+
+        <hr class="line">
+
+        <div class="host">
+            <img src="{% static 'media/host.png' %}">
+            <div>
+                <h2>Hosted by Amine B.</h2>
+                <p><span>
+                        <i class="fa-solid fa-star"  style="color: #FF8400;" ></i>
+                        <i class="fa-solid fa-star" style="color: #FF8400;"></i>
+                        <i class="fa-solid fa-star" style="color: #FF8400;"></i>
+                        <i class="fa-solid fa-star" style="color: #FF8400;"></i>
+                        <i class="fa-regular fa-star-half-stroke" style="color: #FF8400;"></i>
+                    </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60
+                    min</p>
+            </div>
+        </div>
+        <a href="#" class="contact-host">Contact Host</a>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://fr-fr.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/imane-bannour-1b1386260/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2023 , Bannour & Mouhdane</p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>
